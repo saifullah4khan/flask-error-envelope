@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flask-error-envelope"
+version = "0.1.0"
+description = "Consistent, typed JSON error responses for Flask APIs from a single call."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Saifullah Khan", email = "saifullah4khan@gmail.com" }]
+keywords = ["flask", "error-handling", "json", "api", "rest", "retry-after"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["flask>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/saifullah4khan/flask-error-envelope"
+Issues = "https://github.com/saifullah4khan/flask-error-envelope/issues"
+
+[tool.setuptools]
+packages = ["flask_error_envelope"]
